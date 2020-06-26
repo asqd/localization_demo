@@ -162,3 +162,4 @@ HOTELS_LOCALES = [
 HOTELS_LOCALES.each do |hotel_locale| 
   Hotel.find(hotel_locale[:id]).translations.find_by(locale: :en).update(hotel_locale.except(:id))
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
