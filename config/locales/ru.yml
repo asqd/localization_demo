@@ -1,4 +1,5 @@
 ru:
+  translation: '%{locale}'
   activerecord:
     errors:
       messages:
